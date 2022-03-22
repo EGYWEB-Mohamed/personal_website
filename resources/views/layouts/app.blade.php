@@ -285,7 +285,7 @@ $settings=\App\Models\User::first();
             @endif
           </div>
           <div class="col-12 p-0" style="overflow:hidden;position: relative;">
-            <div class="col-12 p-0 main" style="transition: .5s all ease-in-out;">
+            <div class="col-12 p-0 main"  style="transition: .5s all ease-in-out;opacity: 1">
               @yield('content')
             </div>
             <div class="col-12 py-2">
