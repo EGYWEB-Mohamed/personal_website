@@ -286,6 +286,9 @@ $settings=\App\Models\User::first();
             @endif
           </div>
           <div class="col-12 p-0" style="overflow:hidden;position: relative;">
+            <div style="position:absolute;width: 100%;height: 40vh;z-index: 1;transition: .5s all ease-in-out;display: flex;" class="justify-content-center align-items-center loading-overlay">
+              <img src="/images/loading.gif"  class="d-inline-block" style="width:600px;max-width: 100%;">
+            </div>
             <div class="col-12 p-0 main" style="transition: .5s all ease-in-out;">
               @yield('content')
             </div>
@@ -308,6 +311,10 @@ $settings=\App\Models\User::first();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
         $('a[href="' + window.location.href.split('?')[0] + '"] div,a[href="' + window.location.href.split('?')[0] + '"],a[href="' + window.location.href + '"] div,a[href="' + window.location.href + '"]').addClass('active');
+        setTimeout(function(){
+          $('.main').css({'opacity':'1'});
+          $('.loading-overlay').fadeOut(200);
+        },1200);
         
         Fancybox.bind("[data-fancybox]", {
           // Your options go here
