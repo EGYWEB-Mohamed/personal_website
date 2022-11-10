@@ -103,7 +103,7 @@ $settings=\App\Models\User::first();
     <div class="col-12 p-0">
       <div class="container px-2 py-5 p-md-5 my-0 my-md-5 ">
         <div class="col-12 p-0 text-center">
-          <img src="{{$settings->avatar()}}" style="width:150px;border-radius:50%;" class="d-inline-block">
+          <img src="{{$settings->avatar()}}" style="width:150px;border-radius:50%;" height="150" class="d-inline-block">
         </div>
         <div class="col-12 py-3">
           <h1 class="font-5  text-center">{{$settings->name}}</h1>
