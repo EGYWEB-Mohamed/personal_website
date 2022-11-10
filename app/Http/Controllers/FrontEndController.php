@@ -62,4 +62,7 @@ class FrontEndController extends Controller
     public function hire(Request $request){
         return view('front.hire');
     }
+    public function cv(Request $request){
+        return view('front.cv');
+    }
 }

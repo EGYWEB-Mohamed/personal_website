@@ -25,6 +25,7 @@ Route::name('front.')->group(function () {
     Route::get('/contact', [FrontEndController::class,'contact'])->name('contact');
     Route::post('/contact', [FrontEndController::class,'contact_post'])->name('contact.store')->middleware('throttle:2,1');
     Route::get('/hire', [FrontEndController::class,'hire'])->name('hire');
+    Route::get('/cv', [FrontEndController::class,'cv'])->name('cv');
 });
 
 Route::get('/manifest.json', [FrontFileController::class,'manifest_json'])->name('manifest_json');

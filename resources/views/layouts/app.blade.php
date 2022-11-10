@@ -282,6 +282,18 @@ $settings=\App\Models\User::first();
                 </div>
               </a>
             </div>
+            <div class="p-1  text-center font-1 d-inline-block" style="width: 90px;">
+              <a href="{{route('front.cv')}}" class="d-block menu-link" style="border-radius: 7px;color: #232323;">
+                <div class="col-12 p-2 text-center main-box-styles menu-div d-flex align-items-center" style="color: var(--bg-font-4);height: 80px;border-radius: 7px;overflow: hidden;">
+                  <div class="col-12 p-0 text-center">
+                  <span class="fal fa-suitcase d-inline-block  font-3" style="color: var(--bg-color-2);"></span>
+                  <div class="col-12 px-0 text-center title">
+                   السيرة الذاتية
+                  </div>
+                  </div>
+                </div>
+              </a>
+            </div>
             @endif
           </div>
           <div class="col-12 p-0" style="overflow:hidden;position: relative;">
