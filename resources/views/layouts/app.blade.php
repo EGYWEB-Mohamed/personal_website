@@ -11,8 +11,10 @@ $settings=\App\Models\User::first();
 
     @notifyCss
     <link rel="stylesheet" type="text/css" href="{{ asset('css/cust-fonts.css') }}">
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/hung1001/font-awesome-pro/v5/css/all.css"  />
+    <link rel="stylesheet" href="{{ asset('css/fontawsome.css') }}"  />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/responsive-font.css') }}">
+
+
     @include('seo.index')
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
