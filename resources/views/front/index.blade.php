@@ -1,9 +1,9 @@
-@php 
+@php
 $settings=\App\Models\User::first();
 $faqs =\App\Models\Faq::get();
 @endphp
 @extends('layouts.app',[
-'page_title'=>$settings->name,
+'page_title'=>'الرئيسية',
 'page_description'=>strip_tags($settings->bio),
 'page_image'=>$settings->website_logo()
 ])
@@ -17,7 +17,7 @@ $faqs =\App\Models\Faq::get();
 <div class="col-12 p-0">
     <div style="width:650px;max-width: 100%;text-align: justify;" class="mx-auto p-3 font-2 naskh ">
         <div class="col-12 px-0">
- 
+
             @foreach($faqs as $faq)
             <div class="card px-1  mb-2"  >
                 <div class="card-header border-0 btn  px-2 py-1" id="headingOne{{$faq->id}}" style="background: var(--bg-second-bg);" data-bs-toggle="collapse" href="#collapseExample{{$faq->id}}" role="button" aria-expanded="false" aria-controls="collapseExample{{$faq->id}}" >
